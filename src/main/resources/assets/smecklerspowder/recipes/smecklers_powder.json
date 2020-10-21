@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "smecklerspowder:smecklers_powder"
+  },
+  "pattern": [
+    "EDE",
+    "DGD",
+    "EDE"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+
+}

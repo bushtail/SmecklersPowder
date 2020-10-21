@@ -1,0 +1,16 @@
+[
+{
+  "modid": "smecklerspowder",
+  "name": "Smeckler's Powder",
+  "description": "Don't forget to give her Smeckler's Powder.",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Evan \"Bushi\" Nosich"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
