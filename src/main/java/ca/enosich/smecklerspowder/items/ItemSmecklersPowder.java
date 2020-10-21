@@ -15,7 +15,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemSmecklersPowder extends ItemFood {
 
-    
+    // Instantiate ItemSmecklersPowder
     public ItemSmecklersPowder(int amount, float saturation) {
         super(amount, saturation, false);
         this.setAlwaysEdible();
@@ -25,14 +25,18 @@ public class ItemSmecklersPowder extends ItemFood {
         this.setRegistryName("smecklers_powder");
     }
 
+    // Big thanks to the Modded Minecraft Discord, especially Zygan!
+    // Initiate Model
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 
+    // Add 5:00 minute Regeneration effect onFoodEaten
     @Override
     public void onFoodEaten(ItemStack stack, World world, EntityPlayer player) {
         super.onFoodEaten(stack, world, player);
-        player.addPotionEffect(new PotionEffect(Potion.getPotionById(8289), 10, 0));
+
+        player.addPotionEffect(new PotionEffect(Potion.getPotionById(10), 6000, 0));
     }
 }

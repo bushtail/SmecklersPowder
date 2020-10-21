@@ -2,7 +2,6 @@ package ca.enosich.smecklerspowder.proxy;
 
 import ca.enosich.smecklerspowder.ModItems;
 import ca.enosich.smecklerspowder.SmecklersPowder;
-import ca.enosich.smecklerspowder.items.ItemSmecklersPowder;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,18 +13,23 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber(modid = SmecklersPowder.MODID)
 public class CommonProxy {
+
+    // preInit
     public void preInit(FMLPreInitializationEvent event) {
 
     }
 
+    // init
     public void init(FMLInitializationEvent event) {
 
     }
 
+    // postInit
     public void postInit(FMLPostInitializationEvent event) {
 
     }
 
+    // Register items
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
 
