@@ -13,8 +13,6 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import java.util.Objects;
-
 public class ItemSmecklersPowder extends ItemFood {
 
     
@@ -32,9 +30,9 @@ public class ItemSmecklersPowder extends ItemFood {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 
-    public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player) {
+    @Override
+    public void onFoodEaten(ItemStack stack, World world, EntityPlayer player) {
         super.onFoodEaten(stack, world, player);
         player.addPotionEffect(new PotionEffect(Potion.getPotionById(8289), 10, 0));
-        return stack;
     }
 }
