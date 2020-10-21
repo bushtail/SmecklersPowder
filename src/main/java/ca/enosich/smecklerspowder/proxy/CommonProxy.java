@@ -1,6 +1,6 @@
 package ca.enosich.smecklerspowder.proxy;
 
-import ca.enosich.smecklerspowder.items.ItemSmecklersPowder;
+import ca.enosich.smecklerspowder.ModItems;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,7 +23,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemSmecklersPowder(20, 20f));
+        event.getRegistry().register(ModItems.itemSmecklersPowder);
     }
 }
 

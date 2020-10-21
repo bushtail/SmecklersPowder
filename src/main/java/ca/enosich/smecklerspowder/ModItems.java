@@ -8,7 +8,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ModItems {
 
     @GameRegistry.ObjectHolder("smecklerspowder:smecklers_powder")
-    public static ItemSmecklersPowder itemSmecklersPowder;
+    public static final ItemSmecklersPowder itemSmecklersPowder = new ItemSmecklersPowder(20, 20f);
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {

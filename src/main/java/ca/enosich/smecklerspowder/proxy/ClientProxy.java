@@ -26,7 +26,6 @@ public class ClientProxy extends CommonProxy {
         super.postInit(event);
     }
 
-
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         ModItems.initModels();
